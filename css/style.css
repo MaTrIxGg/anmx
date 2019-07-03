@@ -1,0 +1,79 @@
+td[name="tipo"] {
+  font-weight: bold;
+}
+td[name="estadoActual"] {
+  font-weight: bold;
+}
+
+/*Modo ayuda*/
+.switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.container_help {
+    position: relative;
+}
+#uNeedHelp {
+    display: block;
+}
+.checkStatusNO {
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+    font-weight: bold;
+    color: #ccc;
+    -webkit-text-stroke: 0.02cm #585858;
+}
+.checkStatusYES {
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+    font-weight: bold;
+    color: #66bb6a;
+    -webkit-text-stroke: 0.02cm #528d55;
+}
+/*Fin del Modo ayuda*/
