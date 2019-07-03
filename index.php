@@ -106,7 +106,7 @@ $con->close();
                   <input type="number" class="form-control" name="temporada" id="temporada" min="0" value="0" />
                 </td>
                 <td>
-                  <select class="custom-select" id="tipo" name="tipo">
+                  <select class="custom-select" id="transmision" name="transmision">
                     <option selected>Seleccione estado de transmision</option>
                     <option value="EN EMISION">EN EMISION</option>
                     <option value="FINALIZADO">FINALIZADO</option>
@@ -138,6 +138,7 @@ $con->close();
   </div>
 
   <i hidden id="cont"><?php echo $cont; ?></i>
+  <p id="helpIndicator"></p>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
